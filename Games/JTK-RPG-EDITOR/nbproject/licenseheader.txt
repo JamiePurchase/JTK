@@ -1,0 +1,6 @@
+/*
+ * JTK-RPG-EDITOR
+ * JTK Framework
+ * Version 1
+ * Jamie Purchase
+ */

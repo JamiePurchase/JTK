@@ -1,0 +1,16 @@
+body
+{
+	background-color: #000000;
+	color: #00AA00;
+}
+
+.header
+{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 32;
+}
+
+.divider
+{
+	border-bottom: 1px solid #00AA00;
+}

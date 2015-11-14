@@ -1,0 +1,37 @@
+a
+{
+	text-decoration: none;
+}
+
+a:hover
+{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+body
+{
+	background-color: #B5C688;
+	color: #29530A;
+	font-family: "Book Antiqua", Palatino, serif;
+	font-size: 26;
+}
+
+.header1
+{
+	font-size: 42;
+}
+
+.header2
+{
+	font-size: 28;
+}
+
+.pane
+{
+	background-color: #DECCAA;
+	border: 1px SOLID #29530A;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #29530A;
+	padding: 10px;
+}

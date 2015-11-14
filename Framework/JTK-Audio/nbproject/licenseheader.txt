@@ -1,0 +1,5 @@
+/*
+ * JTK Audio Library
+ * Version 1
+ * Jamie Purchase
+ */
