@@ -17,13 +17,14 @@ import java.awt.Graphics;
 public class InfoParty
 {
     private BattleAbstract battle;
-    private String styleColour, styleFont;
+    private String styleColour, styleFont, styleShadow;
     
     public InfoParty(BattleAbstract battle)
     {
         this.battle = battle;
-        this.styleColour = "WHITE";
-        this.styleFont = "MENU";
+        this.styleColour = "UI_OPTION";
+        this.styleFont = "UI_OPTION";
+        this.styleShadow = "UI_SHADOW";
     }
     
     private String getStyleColour()
@@ -36,21 +37,26 @@ public class InfoParty
         return this.styleFont;
     }
     
+    private String getStyleShadow()
+    {
+        return this.styleShadow;
+    }
+    
     public void render(Graphics g)
     {
         // Background
         
         // Headers
-        GFX.write(g, "CHARACTER", 900, 600, "LEFT", this.getStyleFont(), this.getStyleColour());
-        GFX.write(g, "HP", 1100, 600, "LEFT", this.getStyleFont(), this.getStyleColour());
-        GFX.write(g, "AP", 1200, 600, "LEFT", this.getStyleFont(), this.getStyleColour());
+        GFX.writeShadow(g, "CHARACTER", 900, 600, 1, "LEFT", this.getStyleFont(), this.getStyleColour(), this.getStyleShadow());
+        GFX.writeShadow(g, "HP", 1100, 600, 1, "LEFT", this.getStyleFont(), this.getStyleColour(), this.getStyleShadow());
+        GFX.writeShadow(g, "AP", 1200, 600, 1, "LEFT", this.getStyleFont(), this.getStyleColour(), this.getStyleShadow());
         
         // Info
         for(int x = 0; x < this.battle.getUnitParty().size(); x++)
         {
-            GFX.write(g, this.battle.getUnitParty().get(x).getName(), 900, 630 + (30 * x), "LEFT", this.getStyleFont(), this.getStyleColour());
-            GFX.write(g, "1000", 1100, 630 + (30 * x), "LEFT", this.getStyleFont(), this.getStyleColour());
-            GFX.write(g, "70", 1200, 630 + (30 * x), "LEFT", this.getStyleFont(), this.getStyleColour());
+            GFX.writeShadow(g, this.battle.getUnitParty().get(x).getName(), 900, 630 + (30 * x), 1, "LEFT", this.getStyleFont(), this.getStyleColour(), this.getStyleShadow());
+            GFX.writeShadow(g, "1000", 1100, 630 + (30 * x), 1, "LEFT", this.getStyleFont(), this.getStyleColour(), this.getStyleShadow());
+            GFX.writeShadow(g, "70", 1200, 630 + (30 * x), 1, "LEFT", this.getStyleFont(), this.getStyleColour(), this.getStyleShadow());
         }
     }
 

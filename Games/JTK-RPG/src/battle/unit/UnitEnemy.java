@@ -19,7 +19,7 @@ public class UnitEnemy extends UnitAbstract
     
     public UnitEnemy(BattleAbstract battle, String ref, String name)
     {
-        super(battle, ref, name, 0, 0);
+        super(battle, ref, name, 200, 100, "resources/gfx/enemy/1_battle.png", 0, 576);
         
         // Reward
         this.rewardXP = 0;

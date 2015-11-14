@@ -29,12 +29,18 @@ public class Launch
         Application.setStyleColour("TITLE_SHADOW", 150, 50, 50);
         //
         Application.setStyleColour("DIALOG_SHADOW", 150, 50, 50);
+        Application.setStyleColour("MENU_OPTION_SHADOW", 150, 50, 50);
+        Application.setStyleColour("MENU_OPTION_TEXT", 0, 0, 0);
         Application.setStyleColour("TITLEBAR_BKG", 150, 50, 50);
         Application.setStyleColour("TOOLBAR_BKG", 115, 128, 136);
         Application.setStyleColour("TOOLBAR_BORDER", 0, 0, 0);
         Application.setStyleColour("TOOLBAR_ITEM_HIGHLIGHT", 106, 123, 145);
         Application.setStyleColour("TOOLBAR_SCROLL_BUTTON", 115, 128, 136);
         Application.setStyleColour("TOOLBAR_SCROLL_BUTTON_HIGHLIGHT", 106, 123, 145);
+        Application.setStyleColour("UI_OPTION", 0, 0, 0);
+        Application.setStyleColour("UI_SHADOW", 150, 50, 50);
+        Application.setStyleColour("VISUAL_SHADOW", 150, 50, 50);
+        Application.setStyleColour("VISUAL_STANDARD", 0, 0, 0);
         
         // Style: Fonts
         Application.setStyleFont("CHAT_SPEAKER", new Font("Times New Roman", Font.BOLD, 36));
@@ -47,6 +53,8 @@ public class Launch
         Application.setStyleFont("TITLE_INFO", new Font("Don't Mix Yer Drinks", Font.PLAIN, 32));
         Application.setStyleFont("TITLE_MENU", new Font("Don't Mix Yer Drinks", Font.BOLD, 32));
         Application.setStyleFont("TOOLBAR_ITEM", new Font("Courier New", Font.PLAIN, 18));
+        Application.setStyleFont("UI_OPTION", new Font("Don't Mix Yer Drinks", Font.BOLD, 32));
+        Application.setStyleFont("VISUAL_STANDARD", new Font("Don't Mix Yer Drinks", Font.BOLD, 46));
         
         // State
         Application.stateNew(new StateInit());
